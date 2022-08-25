@@ -11,12 +11,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.keys import Keys
+import secrets
 
 
-password = ''.join(choice(string.ascii_letters + string.digits) for _ in range(10))
+password = secrets.token_hex(12)
 
 
-class D:
+class DiscordParser:
 
     def register(self, email, username):
 
@@ -85,7 +86,7 @@ class D:
 email = input("Email: ")
 username = input("Username: ")
 
-a = D()
+a = DiscordParser()
 
 a.register(email, username)
 a.login(email, password)
