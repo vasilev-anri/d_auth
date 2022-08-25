@@ -1,4 +1,3 @@
-import string
 import requests
 import json
 from selenium import webdriver
