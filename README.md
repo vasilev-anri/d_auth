@@ -1,1 +1,1 @@
-During account creation/signing-in captcha has to be solved manually
+
